@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.sarahtully.estimoteproximitybeacons" 
+  version="1.0.0"  
+  xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  <name>cordova-plugin-estimoteproximitybeacons</name>
+  
+  <js-module name="cordova-plugin-estimoteproximitybeacons" 
+    src="www/cordova-plugin-estimoteproximitybeacons.js">
+    <clobbers target="cordova.plugins.cordova-plugin-estimoteproximitybeacons" />
+  </js-module>
+  
+  <platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="cordova-plugin-estimoteproximitybeacons">
+        <param name="ios-package" 
+          value="cordova-plugin-estimoteproximitybeacons" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/ios/cordova-plugin-estimoteproximitybeacons.m" />
+  </platform>
+  
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="cordova-plugin-estimoteproximitybeacons">
+        <param name="android-package" 
+          value="com.sarahtully.estimoteproximitybeacons.cordova-plugin-estimoteproximitybeacons" />
+      </feature>
+    </config-file>
+    
+    <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+    
+    <source-file src="src/android/cordova-plugin-estimoteproximitybeacons.java" 
+      target-dir="src/com/sarahtully/estimoteproximitybeacons/cordova-plugin-estimoteproximitybeacons" />
+  </platform>
+</plugin>
