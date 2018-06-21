@@ -4,14 +4,21 @@
   "description": "Provides a simple way to develop Cordova apps for Estimote Proximity Beacons",
   "cordova": {
     "id": "com.sarahtully.estimoteproximitybeacons",
-    "platforms": []
+    "platforms": [
+      "android",
+      "ios"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sarahtully/cordova-plugin-estimoteproximitybeacons.git"
   },
   "keywords": [
-    "ecosystem:cordova"
+    "ecosystem:cordova",
+    "Estimote",
+    "Beacons",
+    "cordova-android",
+    "cordova-ios"
   ],
   "author": "Sarah Tully",
   "license": "MIT",
